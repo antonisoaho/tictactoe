@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/yourusername/luffarshack.git
+   cd luffarshack
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies for the frontend and backend:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   cd backend
+   npm install
+   cd ..
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Create environment variable files:
 
-## Deploy on Vercel
+   ```bash
+   cp .env.example .env
+   cd backend
+   cp .env.example .env
+   cd ..
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Update the `.env` files with your configuration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Running the Application
+
+1. Start the development servers:
+
+   ```bash
+   npm run dev
+   ```
+
+   This will start both the Next.js frontend and the backend server.
+
+2. Open your browser and navigate to `http://localhost:3000`.
+
+### Project Structure
+
+- `src/`: Contains the frontend code.
+- `backend/`: Contains the backend code.
+- `.env`: Environment variables for the frontend.
+- `backend/.env`: Environment variables for the backend.
