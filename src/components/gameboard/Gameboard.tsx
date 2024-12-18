@@ -1,7 +1,7 @@
 "use client";
 import { use, useState, useEffect } from "react";
-import cross from "../../assets/icons/cross.png";
-import circle from "../../assets/icons/circle.png";
+import cross from "../../../public/assets/icons/cross.png";
+import circle from "../../../public/assets/icons/circle.png";
 
 const row = 3;
 const boxes = 3;
